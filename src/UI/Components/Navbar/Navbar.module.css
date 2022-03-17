@@ -1,0 +1,29 @@
+.navbar {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 40px 1fr;
+    padding-top: 30px;
+}
+
+.link {
+    color: #e8f0fa;
+    text-decoration: none;
+    padding-left: 30px;
+    font-family: "Playfair Display SC";
+    font-weight: 300;
+    font-size: 21px;
+}
+
+.links {
+    display: grid;
+    padding-top: 12px;
+    padding-right: 10px;
+}
+
+.icons {
+    padding-left: 15px;
+}
+
+.icon {
+    width: 45px;
+}

@@ -1,0 +1,22 @@
+.main{
+    display: grid;
+    grid-template-columns: 30vh 1fr;
+    grid-auto-rows: 60px 1fr;
+    grid-template-areas: "n h"
+    "n c"
+}
+
+.header{
+    grid-area:h;
+}
+
+.navbar{
+    grid-area:n;
+    background-color: #270a48;
+    min-height: 100vh;
+    width: 30vh;
+}
+
+.content{
+    grid-area:c;
+}
