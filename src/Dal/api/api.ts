@@ -9,8 +9,11 @@ mock.onGet('/pupils').reply(200,{
 })
 
 
-const pupilsAPi = {
+export const pupilsAPi = {
     getPupils(){
-    axios.get('/pupils')
+   return  axios.get('/pupils')
+    },
+    getProfileStudent(id:number){
+        return axios.get(`/student/${id}`,)
     }
 }

@@ -1,11 +1,14 @@
 import {Student} from "./Student";
-import {useAppSelector} from "../../../Hooks/Selector";
+import {useEffect} from "react";
+import {useDispatch} from "react-redux";
 
 
 export const StudentContainer = () => {
-    const pupils =useAppSelector(state =>state.pupils.pupils )
+    const dispatch = useDispatch()
+    useEffect(()=>{dispatch()},[])
+
     return (
-        <div>{pupils[0].name}</div>
+        <Student/>
     );
 };
 

@@ -1,6 +1,6 @@
-import {getStudent} from "./PupilsReducer";
+import {setStudents} from "./PupilsReducer";
 
-export type ActionPupilsType = ReturnType<typeof getStudent>
+export type ActionPupilsType = ReturnType<typeof setStudents>
 
 export type StudentType = {
     name:string

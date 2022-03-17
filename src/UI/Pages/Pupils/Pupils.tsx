@@ -5,13 +5,14 @@ import boy from '../../../Picture/child1.jpg'
 import girl from '../../../Picture/child3.jpg'
 import {NavLink} from "react-router-dom";
 import {STUDENT_ROUTE} from "../../../Utils";
-import {getStudent} from "../../../Bll/Reducer/PupilsReducer";
-import {useDispatch} from "react-redux";
+
+
 type propsType = {
     pupils:PupilsType
 }
 export const Pupils = ({pupils}:propsType) => {
-const disp = useDispatch()
+
+
     return (
         <div className={s.container}>
             <h1>Cтраница учеников</h1>
@@ -27,8 +28,8 @@ const disp = useDispatch()
                         <Card.Text>
                           Старт занятий: {startDate}
                         </Card.Text>
-                       <NavLink to={STUDENT_ROUTE+`/${id}`}>
-                           <Button onClick={()=>(disp(getStudent(id)))} variant="outline-dark">В профиль ученика</Button></NavLink>
+                       <NavLink  to={STUDENT_ROUTE+`/${id}`}>
+                           <Button variant="outline-dark">В профиль ученика</Button></NavLink>
 
                     </Card.Body>
                 </Card>
